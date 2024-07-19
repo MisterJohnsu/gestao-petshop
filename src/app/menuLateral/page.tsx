@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 export default function Menu() {
   return (
-    <header>
+    <header className="flex h-screen">
       <nav className="menu-lateral">
         <div className="btn-expandir">
             <i className="bi bi-list"></i>
         </div>
         <ul className="">
             <li className="item-menu">
-            <Link href="/">
-                    <span className="icon"><i className="bi bi-house-door"></i></span>
+            <Link href="/" className="item-menu flex items-center space-x-4 hover:bg-gray-700 p-2 rounded">
+                    <span className="icon"><i className="w-6 h-6 bi bi-house-door"></i></span>
                     <span className="txt-link">Início</span>
             </Link>
             </li>

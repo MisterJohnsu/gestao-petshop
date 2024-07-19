@@ -7,12 +7,12 @@ export default function Index() {
     <div>
     <header>
       <Menu />
-      <section>
-        <main className=''>
-        <h1 className='pl-[5.4rem]'>Hello Word!</h1>
-        </main>
-      </section>
     </header>
+    <div>
+      <main>
+        
+      </main>
+    </div>
     </div>
   );
 }
