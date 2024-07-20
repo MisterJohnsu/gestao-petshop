@@ -1,11 +1,11 @@
-// app/home/page.tsx
+// app/caixa/page.tsx
 'use client';
 import Link from 'next/link';
-import Menu from '../menuLateral/page'
 import { useForm, useFieldArray } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { useState } from 'react';
+import { Button } from "@/components/ui/button"
 
 const createUserFormSchema = z.object({
 cliente: z.string(),
@@ -27,9 +27,8 @@ export default function Caixa() {
   })
 
   return (
-    <div>
-    <main className='flex-1 p-4'>
-      <div className='bg-white rounded-lg shadow-md-p-6'>
+    <main className=''>
+      <div className='ml-[5.5rem] bg-white rounded-lg shadow-md-p-6'>
       <h2 className='text-2x1 font-bold mb-4'>Registro de Vendas</h2>
       <form className='space y-4'>
         <div>
@@ -72,19 +71,16 @@ export default function Caixa() {
           {...register('valor')}
           />
         </div>
-        
-      </form>
-      <button
+        <Button
         type='submit'
-        className='bg-primary text-white font-medium py-2 px-4 mt-4 rounded-md hover:bgprimary-dark'
+        className='bg-emerald-500 rounded font-semibold - text-white h-10 hover:bg-emerald-600 mt-4'
         >
           Registrar Venda
-        </button>
+        </Button>
+      </form>
+
       <pre>{output}</pre>
       </div>
     </main>
-    </div>
-
-    
   );
 }
