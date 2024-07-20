@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Inter as FontSans } from "next/font/google";
-import "../styles/globals.css";
 import Link from 'next/link';
 import { Button } from "@/components/ui/button"
 
@@ -14,7 +13,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Gestao Pet",
+  title: "Caixa",
   description: "",
 };
 
