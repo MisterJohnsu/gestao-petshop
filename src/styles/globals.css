@@ -1,83 +1,117 @@
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?familyOutfit:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142 86% 28%;
+    --primary-foreground: 356 29% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 45%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142 86% 28%;
+    --radius: 0.5rem;
+  }
 }
 
-body{
-    height: 100vh;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body{
+    @apply bg-background text-foreground font-body;
+  }
 }
 
-nav.menu-lateral{
-    width: 80px;
-    height: 100%;
-    background-color: #202020;
-    padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 green;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .2s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
 }
 
-nav.menu-lateral:hover{
-    width: 300px;
+body {
+  height: 100vh;
 }
 
-.btn-expandir{
-    width: 100%;
-    padding-left: 10px;
+nav.menu-lateral {
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .2s;
 }
 
-.btn-expandir > i{
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+nav.menu-lateral:hover {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .content {
-    margin-left: 220px; /* Espaço para o menu lateral */
-    padding: 20px;
-    flex-grow: 1;
+  margin-left: 220px; /* Espaço para o menu lateral */
+  padding: 20px;
+  flex-grow: 1;
 }
 
-ul{
-    height: 100%;
-    list-style-type: none;
+ul {
+  height: 100%;
+  list-style-type: none;
 }
 
-ul li.item-menu{
-    transition: .2s;
+ul li.item-menu {
+  transition: .2s;
 }
 
-ul li.item-menu:hover{
-    background: green;
+ul li.item-menu:hover {
+  background: green;
 }
 
-ul li.item-menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 40px;
+ul li.item-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
 }
 
-ul li.item-menu a .txt-link{
-    margin-left: 40px;
+ul li.item-menu a .txt-link {
+  margin-left: 40px;
 }
 
-ul li.item-menu a .icon > i{
-    font-size: 30px;
-    margin-left: 10px;
+ul li.item-menu a .icon > i {
+  font-size: 30px;
+  margin-left: 10px;
 }
