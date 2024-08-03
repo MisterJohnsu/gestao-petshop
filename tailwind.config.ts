@@ -5,8 +5,8 @@ const config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
-    './components/**/*.{js,jsx,ts,tsx}',
-    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
   prefix: "",
@@ -20,8 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        heading: ['var(--font-heading)', ...fontFamily.sans],
-        body: ['var(--font-body)', ...fontFamily.sans]
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",
