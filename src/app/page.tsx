@@ -8,7 +8,7 @@ export default function Index() {
     </header>
     <div>
       <main>
-        
+        <h1>testando</h1>
       </main>
     </div>
     </div>
