@@ -1,5 +1,5 @@
 // app/home/page.tsx
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Index() {
   return (
@@ -8,7 +8,7 @@ export default function Index() {
     </header>
     <div>
       <main>
-        <h1>testando</h1>
+        
       </main>
     </div>
     </div>
